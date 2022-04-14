@@ -1,0 +1,97 @@
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>Clearance Badge</title>
+    <link
+      rel="stylesheet"
+      href="https://studenthealth.ucsc.edu/Resources/stylesheets/themes/bootstrap.cosmo.min.css"
+    />
+    <link
+      href="https://studenthealth.ucsc.edu/bower_components/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://studenthealth.ucsc.edu/Resources/stylesheets/responsive.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="quarantineBadge" class="badge-Green">
+      <div
+        style="position: fixed; top: 0; left: 0; width: 100vw; z-index: 9999"
+      ></div>
+
+      <p>Clearance Status</p>
+      <h1 style="margin-top: -20px; font-size: 2.75em">Cleared</h1>
+      <div id="now" style="font-size: 1.4em">4/8/2022 1:43 AM</div>
+      <div id="patInfo" class="row text-center" style="margin-top: 15px">
+        <div class="col-xs-12">
+          <img
+            id="patImage"
+            src="https://lh3.googleusercontent.com/A0yoAzC03O2XScvHhZoT153GJ9BFoEioSzONRzb06j7J7lcQRE1MEfZc3ROiKU7IBfajhn3OxlmiEPTOZ1R6tzjPdSq_jEl_xbQjX61a6MwHCfbniNcCL5gQJcviWUBhri4QlAY9=w2400"
+            alt="Patient Image"
+            style="max-width: 170px; margin-top: -15px"
+          />
+        </div>
+        <div class="col-xs-12">
+          <h3 id="badgename" class="mb-0" style="margin-top: 4px">
+            <strong>Jonathan Cheng</strong>
+          </h3>
+        </div>
+        <div class="col-xs-12">
+          <span id="badgedob" class="ml-2">Dec 8</span>
+        </div>
+        <div class="col-xs-12">
+          <span>#1856049</span>
+        </div>
+      </div>
+      <div id="badgeqr" class="mt-2">
+        <img
+          src="data:image/png;base64,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"
+        />
+      </div>
+      <div style="font-size: 0.8em">
+        This badge system is not applicable to employees
+      </div>
+      <div
+        id="labtest"
+        style="font-size: 0.8em; background-color: #32cd32; color: #ffffff"
+      >
+        Next Lab Test Due: 4/12/2022 10:00 AM
+      </div>
+      <div style="font-size: 0.8em">Compliant with Standard Requirements</div>
+
+      <script>
+        date = new Date();
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        day = date.getDate();
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        var ampm = hours >= 12 ? "PM" : "AM";
+        hours = hours % 12;
+        hours = hours ? hours : 12;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        document.getElementById(
+          "now"
+        ).innerHTML = `${month}/${day}/${year} ${hours}:${minutes} ${ampm}`;
+        document.getElementById("labtest").innerHTML = `Next Lab Test Due: ${
+          month + (day + 3 > 27)
+        }/${((day + 3) % 28) + 1}/${year} 10:00 AM`;
+      </script>
+    </div>
+    <script src="/wwwroot/lib/jquery/jquery.min.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
