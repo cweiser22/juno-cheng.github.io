@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <!-- Import Framework - HTML/BootStrap -->
+
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <style>
+    body {
+      background-color: black;
+    }
+    .row {
+      margin: 125px 0px 0px 0px;
+    }
+    h2 {
+      font-family: "Roboto Mono", monospace;
+      position: relative;
+      width: max-content;
+    }
+
+    h5{
+      font-size: 13px;
+
+    }
+    .col-sm-4 {
+      margin: 50px 0px 0px 0px;
+    }
+
+    .skill li{
+      margin: 20px;
+      color: #151516;
+    }
+    .bar{
+      background-color: purple;
+      display: block;
+      height: 2px ;
+      border: 1px solid (0,0,0,0.3);
+      border-radius: 3px;
+      overflow: hidden;
+      box-shadow: 0 0 10px #2187e7b3;
+    }
+    .bar  span{
+      height: 2px;
+      float: left;
+      background-color: slateblue;
+    }
+
+    .HTML{animation: html 2s forwards;}
+    .JS{animation: js 2s forwards;}
+    .Py{animation: py 2s forwards;}
+    .C{animation: c 2s forwards;}
+    .Unity{animation: unity 2s forwards;}
+
+    @keyframes html{
+      0%{width: 0%;}
+      100%{width: 70%;}
+
+    }
+
+    @keyframes js{
+      0%{width: 0%;}
+      100%{width: 40%;}
+
+    }
+    @keyframes py{
+      0%{width: 0%;}
+      100%{width: 80%;}
+
+    }
+
+    @keyframes c{
+      0%{width: 0%;}
+      100%{width: 60%;}
+
+    }
+
+    @keyframes unity{
+      0%{width: 0%;}
+      100%{width: 60%;}
+
+    }
+  </style>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand">Jonathan D Cheng</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="main.html">About Me</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="content.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-5" style="background-color: #1d1e20">
+        <h2 style="color: white">Work Experience</h2>
+        <hr
+          style="
+            height: 2px;
+            border-width: 0;
+            color: rgb(0, 204, 255);
+            background-color: rgb(0, 204, 255);
+          "
+        />
+
+        <b><h4 style="color: silver">Game Developer</h4></b>
+ 
+        <span style="color: silver; text-align: left">
+          UC Merced / November 2021 - Present</span
+        >
+        <br />
+        <br />
+        <span style="color: silver; text-align: left">
+          • Worked with the design team to develop game concepts and design
+          elements
+        </span>
+        <br />
+        <span style="color: silver; text-align: left">
+          • Translated design ideas using Unity into clean and efficient code
+        </span>
+        <br />
+        <br />
+
+        <b><h4 style="color: silver">Cybersecurity Marketing Assistant</h4></b>
+
+        <span style="color: silver; text-align: left">
+          Anomali / June 2022 - August 2022</span
+        >
+        <br />
+        <br />
+        <span style="color: silver; text-align: left">
+          • Worked with the China's Regional Marketing Administrator to develop
+          Marketing Campaigns
+        </span>
+        <br />
+        <span style="color: silver; text-align: left">
+          • Increased product visiblity by using tools such as Sender and other
+          Marketing Tools
+        </span>
+        <br />
+        <br />
+
+        <b><h4 style="color: silver">IT Network Intern</h4></b>
+
+        <span style="color: silver; text-align: left">
+          DSS Tornoto / May 2020 - July 2020</span
+        >
+        <br />
+        <br />
+        <span style="color: silver; text-align: left">
+          • Evaluated systems, identified issues and developed appropriate
+          solutions.
+        </span>
+        <br />
+        <span style="color: silver; text-align: left">
+          • Trained with Senior Networking Engineers to learn more about the
+          Networking Field.</span
+        >
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+
+        <!--Script Link-->
+        <script src="button.js"></script>
+        <div class="col-sm-4" style="background-color: #151516">
+          <b><h2 style="color: white; font-size: 20px;">Skillset</h2></b>
+          <hr
+          style="
+            height: 2px;
+            border-width: 0;
+            color: rgb(0, 204, 255);
+            background-color: rgb(0, 204, 255);
+          "
+        />
+        
+        <div class="skill">
+        <li><h5 style="color: silver;">HTML5/CSS3</h5><span class="bar"><span class="HTML"></span></span></li>
+        <li><h5 style="color: silver;">JavaScript</h5><span class="bar"><span class="JS"></span></span></li>
+        <li><h5 style="color: silver;">Python</h5><span class="bar"><span class="Py"></span></span></li>
+        <li><h5 style="color: silver;">Unity</h5><span class="bar"><span class="Unity"></span></span></li>
+        <li><h5 style="color: silver;">C#</h5><span class="bar"><span class="C"></span></span></li>
+        
+      </div>
+      </div>
+        <div class="col-sm-1"></div>
+      </div>
+    </div>
+  </body>
+</html>
