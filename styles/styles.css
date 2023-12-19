@@ -1,0 +1,538 @@
+@charset "utf-8";
+
+* {
+
+	text-decoration: none;
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+nav {
+
+	position: fixed;
+
+	width: 100%;
+
+	z-index: 2;
+
+	color: white;
+
+}
+
+li {
+
+	display: inline;
+
+	font-family: "Source Sans Pro", sans-serif;
+
+	font-size: 16px;
+
+	font-weight: 400px;
+
+	padding: 40px;
+
+	
+
+	
+
+}
+
+#logo {
+
+	font-weight: 700;
+
+	font-size: 23px;
+
+	font-family: "Expletus Sans";
+
+	position: relative;
+
+	top: 3px;
+
+}
+
+body, html {
+
+	margin: 0;
+
+	padding: 0;
+
+	
+
+}
+
+#bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(135deg, rgba(26, 188, 156, 1) 0%, rgb(0, 0, 0) 70%);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#content {
+    background-color: rgb(0, 0, 0); /* Solid black */
+    position: absolute;
+    width: 100%;
+    height: 300vh;
+    top: 100%;
+    z-index: -1;
+}
+
+@keyframes fadeInUp {
+
+	
+
+    from {
+
+        transform: translate3d(0,40px,0)
+
+    }
+
+
+
+    to {
+
+        transform: translate3d(0,0,0);
+
+        opacity: 1
+
+    }
+
+}
+
+@-webkit-keyframes fadeInUp {
+
+    from {
+
+        transform: translate3d(0,40px,0)
+
+    }
+
+
+
+    to {
+
+        transform: translate3d(0,0,0);
+
+        opacity: 1
+
+    }
+
+}
+
+.animated {
+
+    animation-duration: 1.5s;
+
+    animation-fill-mode: both;
+
+    -webkit-animation-duration: 1.5s;
+
+    -webkit-animation-fill-mode: both;
+
+}
+
+.animatedFadeInUp {
+
+    opacity: 0
+
+}
+
+.fadeInUp {
+
+    opacity: 0;
+
+    animation-name: fadeInUp;
+
+    -webkit-animation-name: fadeInUp;
+
+}
+
+.container {
+	display: flex;
+	position: absolute;
+
+	font-family: "Expletus Sans";
+
+	top: 375px;
+
+	left: 21%;
+
+	font-size: 120px;
+
+	font-weight: bolder;
+
+	font-weight: 700;
+
+	transform: translatey(0px);
+
+	animation: float 3.5s ease-in-out infinite;
+
+	letter-spacing: 12px;
+
+	color: white;
+
+	
+}
+
+.container2 {
+	display: flex;
+	position: absolute;
+
+	font-family: "Expletus Sans";
+
+	top: 375px;
+
+	left: 21%;
+
+	font-size: 120px;
+
+	font-weight: bolder;
+
+	font-weight: 700;
+
+	transform: translatey(0px);
+
+	animation: float 3.5s ease-in-out infinite;
+
+	letter-spacing: 12px;
+
+	color: white;
+
+	
+}
+
+.text {
+
+	position: absolute;
+
+	font-family: "Titillium Web";
+
+	font-size: 36px;
+
+	top: 512px;
+
+	left: 25%;
+
+	font-weight: 400;
+
+	color: #FFFFFF;	
+
+}
+
+@keyframes float {
+
+	0% {
+
+		transform: translatey(0px) rotate(0.01deg);
+
+
+	}
+
+	50% {
+
+		transform: translatey(-15px) rotate(0.01deg);
+
+	}
+
+	100% {
+
+		transform: translatey(0px) rotate(0.01deg);
+
+	}
+
+}
+
+ .prlgrm {
+
+	position: relative;
+
+	top: 518px;
+
+	left: 23%;
+
+	width: 3px; 
+
+	height: 40px; 
+
+	transform: skew(-20deg);
+
+	background-color: #FF0000; 
+
+}
+
+.scroll {
+	background-color: rgba(0,0,0, .23);
+	position: fixed;
+	width: 45px;
+	height: 45px;
+	top: 89%;
+	left: 90%;
+	border-radius: 50%;
+	transition: 0.3s;
+	
+}
+
+.scroll:hover {
+	cursor: pointer;
+}
+
+.txt {
+	position: fixed;
+	font-weight: 400;
+	font-family: "Titillium Web";
+	font-size: 18px;
+	letter-spacing: 5px;
+	color: whitesmoke;
+	top: 90%;
+	left: 80%;
+	z-index: 5;
+	transition: 0.3s;
+	
+}
+
+#arrw {
+	opacity: 1;
+	border: solid whitesmoke;
+	width: 4px;
+	height: 4px;
+  	border-width: 0 3px 3px 0;
+  	display: inline-block;
+  	padding: 3px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	
+	
+}
+
+#ctnr2 {
+	position: absolute;
+	top: 28%;
+	left: 35%;
+	transform: scale(1.2);
+}
+
+.scrolled {
+	color: black;
+	left: 81%;
+}
+
+.scrolled2 {
+	background-color: rgba(0, 0, 0, 1);
+	border-color: blue;
+	transform: rotate(180deg);
+}
+
+#sidebar {
+    position: fixed;
+    left: -250px; /* Hide sidebar off-screen */
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #333;
+    transition: left 0.3s;
+    z-index: 1; /* Ensure sidebar is below the toggle button */
+}
+
+#sidebarToggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 2; /* Higher z-index to stay on top */
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    border: none; /* Remove any default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Some padding for aesthetics */
+    font-size: 16px; /* Adjust text size */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+#sidebar ul {
+    list-style: none; /* Remove default list styling */
+	padding-top: 60px;
+    margin: 0;
+}
+
+#sidebar ul li {
+    padding: 15px 20px; /* Add padding for spacing */
+    border-bottom: 1px solid #555; /* Add a subtle separator */
+}
+
+#sidebar ul li a {
+    color: #ddd; /* Change text color for better contrast */
+    font-size: 18px; /* Make the font-size bigger */
+    display: block; /* Make the link fill the li for easier clicking */
+    text-transform: uppercase; /* Optional: style preference */
+    letter-spacing: 1px; /* Increase letter spacing */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+#sidebar ul li a:hover {
+    color: #fff; /* Lighter color on hover for feedback */
+}
+
+#content .container {
+    position: absolute; /* Position the container absolutely within the content */
+	top: 50px; /* Increase top value to lower the text */
+    left: 50px; /* Maintain left alignment */
+    margin: 0; /* Reset any margin */
+    padding: 20px; /* Add padding to move content away from the very edge */
+}
+
+#content .container2 {
+    position: absolute; /* Maintain absolute positioning */
+    top: 100vh; /* Position below the Projects section */
+    right: 50px; /* Align to the right side with 50px distance from the edge */
+    left: auto; /* Override any previous left value */
+    margin: 0; /* Keep the margin reset */
+    padding: 20px; /* Maintain the padding */
+    /* Add additional styling as required */
+}
+
+.container2 h1.header-line {
+    /* If you need the line to be a certain distance from the heading, adjust the following: */
+    padding-right: 50px; /* Example value to push the line away from the text */
+}
+
+
+#content .container h1 {
+    color: rgb(228, 228, 228); /* Light grey text for visibility */
+    font-size: 40px; /* Larger font size for heading */
+    margin: 0 0 20px 0; /* Remove margin from the heading and add a small margin bottom */
+    padding: 0; /* No padding for the heading */
+    text-align: left; /* Align text to the left */
+    /* Additional styles if needed */
+}
+
+#content .container2 h1 {
+    color: rgb(228, 228, 228); /* Light grey text for visibility */
+    font-size: 40px; /* Larger font size for heading */
+    margin: 0 0 20px 0; /* Remove margin from the heading and add a small margin bottom */
+    padding: 0; /* No padding for the heading */
+    text-align: left; /* Align text to the left */
+    /* Additional styles if needed */
+}
+
+#content .container p {
+    color: #ddd; /* Lighter text for the paragraph */
+    font-size: 20px; /* Appropriate font size for paragraph */
+    line-height: 1.6; /* Adjust line height for better readability */
+    margin: 0 0 20px 0; /* Adjust margin to add space below the paragraph */
+}
+
+.header-line {
+    position: relative; /* Needed for the pseudo-element */
+    display: inline-block; /* Aligns the pseudo-element correctly */
+    /* Add any additional text styling here, like color, font-size, etc. */
+}
+
+.header-line::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 100%; /* Starts right after the text */
+    top: 50%; /* Aligns with the middle of the text */
+    width: 200vw; /* Width relative to viewport width */
+    max-width: 900px; /* Maximum width to prevent it from getting too long */
+    height: 2px; /* Thickness of the line */
+    background-color:  rgba(26, 188, 156, 1); /* Color of the line */
+    margin-left: 10px; /* Space between text and line */
+    transform: translateY(-50%); /* Centers the line vertically */
+}
+
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80vw, 1fr)); /* Responsive width */
+    gap: 20px; /* Gap between the boxes */
+    justify-content: center; /* Center the boxes horizontally */
+    padding: 0 20px; /* Remove top padding to reduce the gap, keep horizontal padding */
+    max-width: 1200px; /* Optional: maximum width constraint */
+    margin: 0 auto; /* Center the grid if it's narrower than max-width */
+}
+
+.project-box {
+    background-color: #000000; /* Dark background for the box */
+    color: #fff; /* Light text color for readability */
+    padding: 20px;
+    border: 1px solid rgba(26, 188, 156, 1); /* Red border as shown in the image */
+    display: flex; /* Use flex to control the layout inside the project box */
+    flex-direction: column; /* Stack children elements vertically */
+    justify-content: space-between; /* Distribute space between items */
+    opacity: 0; /* Start with the box invisible */
+    transform: translateY(20px); /* Start slightly translated for the animation */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Transition for fade-in effect */
+}
+
+.project-box h2 {
+    color: #ffffff; /* Red color for the heading to match the border */
+    margin-bottom: 5px;
+}
+
+.project-box p {
+    margin-bottom: 15px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: rgba(26, 188, 156, 1); /* Red color for the link to match the heading */
+    border-bottom: 1px solid transparent; /* Transparent underline for normal state */
+    padding-bottom: 2px; /* Padding for the underline effect */
+    transition: border-bottom-color 0.3s; /* Transition for the underline effect */
+}
+
+.project-link:hover, .project-link:focus {
+    border-bottom-color: rgb(0, 142, 114); /* Red underline on hover/focus */
+}
+
+.project-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Adjust the height as necessary */
+    margin-top: 50px; /* Add top margin to lower the projects container */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-box.visible {
+    opacity: 1; /* Make the box visible */
+    transform: translateY(0); /* Reset translation when visible */
+}
+
+.project-box.animate {
+    opacity: 1; /* Make the box visible */
+    transform: translateY(0); /* Reset translation when visible */
+}
+
+.container2 .header-line2 {
+    position: relative; /* Needed for the pseudo-element positioning */
+    display: inline-block; /* Keeps the pseudo-element aligned with the text */
+    padding-left: 30px; /* Adds space for the line on the left */
+}
+
+.container2 .header-line2::before {
+    content: ''; /* The content of the pseudo-element */
+    position: absolute; /* Positions the pseudo-element absolutely within .header-line2 */
+    left: calc(-200vw - 20px); /* Aligns the pseudo-element to the far left of .header-line2 */
+    top: 50%; /* Centers it vertically */
+    width: 200vw; /* The width of the line */
+    height: 2px; /* The height (thickness) of the line */
+    background-color: rgba(26, 188, 156, 1); /* The color of the line */
+    transform: translateY(-50%); /* Ensures the line is centered with the text */
+}
