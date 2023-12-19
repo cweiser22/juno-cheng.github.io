@@ -536,3 +536,79 @@ body, html {
     background-color: rgba(26, 188, 156, 1); /* The color of the line */
     transform: translateY(-50%); /* Ensures the line is centered with the text */
 }
+
+.about-me-description {
+    text-align: left; /* Center the text */
+    margin-top: 200px; /* Increase space between the header and the paragraph */
+    font-size: 18px; /* Adjust font size as necessary */
+    color: #fff; /* Adjust text color as needed */
+    font-family: 'Georgia', serif; /* Example of a 'nicer' font, adjust as desired */
+    max-width: 50%; /* Restrict the width of the paragraph for better readability */
+    margin-left: auto; /* These two lines center the paragraph block */
+    margin-right: auto;
+    padding-left: 0%; /* Adjust this value as needed to center the text towards the left */
+    padding-right: 20%; /* Keeps the text from stretching too far to the right */
+}
+
+.about-me-description .part1 {
+    color: #d447ff;
+    font-size: 20px;
+    font-family: "Expletus Sans", sans-serif;
+    font-style: italic; /* Keeps the text italic */
+    position: relative; /* Allows for left positioning */
+    left:  calc(-10vw); /* Adjust as needed for slight left shift */
+    max-width: 500px; /* Set a maximum width */
+    margin-left: auto; /* Center the text block */
+    margin-right: auto;
+}
+
+
+.about-me-description .part2 {
+    color: rgba(26, 188, 156, 1); /* Steel blue color */
+    font-size: 16px;
+    font-family: "Expletus Sans", sans-serif;
+    position: relative; /* Add relative positioning */
+    left:  calc(-10vw); /* Shift to the left */
+    margin-top: 20px; /* Increase top margin */
+    max-width: 500px; /* Set a maximum width */
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Ensure it's on its own line */
+}
+
+
+.about-me-description .part1, .about-me-description .part2 {
+    position: relative;
+    left: calc(-10vw); /* Example value, adjust as needed */
+    /* Other styles... */
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 1000px) { /* Adjust the breakpoint as needed */
+    .about-me-description {
+        text-align: center; /* Center the text */
+        max-width: 70%; /* Increase max-width for better readability on smaller screens */
+        padding-left: 0; /* Reset padding for smaller screens */
+        padding-right: 0; /* Reset padding for smaller screens */
+        /* Other adjustments as needed */
+    }
+}
+
+@media (max-width: 1000px) {
+    .project-container {
+        grid-template-columns: 1fr; 
+        gap: 15px; /* Adjust the gap if needed */
+        
+    }
+
+
+    /* Additional adjustments for .about-me-description */
+    .about-me-description {
+        text-align: center; /* Center the text */
+        max-width: 70%; /* Increase max-width for better readability */
+        padding-left: 0; /* Reset left padding */
+        padding-right: 0; /* Reset right padding */
+    }
+}
+
+
