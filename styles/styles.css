@@ -590,6 +590,7 @@ body, html {
         max-width: 70%; /* Increase max-width for better readability on smaller screens */
         padding-left: 0; /* Reset padding for smaller screens */
         padding-right: 0; /* Reset padding for smaller screens */
+        
         /* Other adjustments as needed */
     }
 }
@@ -608,6 +609,31 @@ body, html {
         max-width: 70%; /* Increase max-width for better readability */
         padding-left: 0; /* Reset left padding */
         padding-right: 0; /* Reset right padding */
+    }
+}
+
+.AboutMe .about-me-image {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10%; /* Makes the image circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    position: absolute; /* Position the image absolutely within the AboutMe container */
+    right: 300px; /* Distance from the right */
+    top: 1100px; /* Increased distance from the top to lower the image */
+}
+
+@media (max-width: 1000px) {
+    .AboutMe .about-me-image {
+        width: 150px;
+        height: auto;
+        border-radius: 10%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+        position: absolute;
+        left: 40%; /* Center horizontally */
+        transform: translateX(-50%); /* Adjust for exact center alignment */
+        top: 1400px; /* Adjust vertical position as needed */
     }
 }
 
