@@ -606,8 +606,8 @@ body, html {
     /* Additional adjustments for .about-me-description */
     .about-me-description {
         text-align: center; /* Center the text */
-        max-width: 70%; /* Increase max-width for better readability */
-        padding-left: 0; /* Reset left padding */
+        max-width: 80%; /* Increase max-width for better readability */
+        padding-left: 100px; /* Reset left padding */
         padding-right: 0; /* Reset right padding */
     }
 }
@@ -646,20 +646,33 @@ body, html {
 }
 
 @media (max-width: 1000px) {
-    .AboutMe .about-me-image,
     .social-icons {
-        right: 50%; /* Center both the image and icons horizontally */
-        transform: translateX(-50%) translateY(0%); /* Adjust for exact center alignment horizontally */
-        top: 170vh; /* Position lower on the screen */
+        right: 40%; /* Center both the image and icons horizontally */
+        transform: translateX(-70%) translateY(0%); /* Adjust for exact center alignment horizontally */
+        top: 175vh; /* Position lower on the screen */
+        width: 25vw;
     }
 }
 
+@media (max-width: 1000px) {
+    .AboutMe .about-me-image        
+    {
+        right: 30%; /* Center both the image and icons horizontally */
+        transform: translateX(-50%) translateY(0%); /* Adjust for exact center alignment horizontally */
+        top: 175vh; /* Position lower on the screen */
+        width: 20vw;
+        max-width: 400px;
+        
+    }
+}
+
+
 .cv-button-container {
     text-align: center; /* Center the button container */
-    margin-top: 30px; /* Add space above the button */
-  }
-  
-  .cv-button {
+    margin-top: 40px; /* Add space above the button */
+}
+
+.cv-button {
     display: inline-block;
     background-color: #000; /* Dark background */
     color: #fff; /* White text */
@@ -669,10 +682,21 @@ body, html {
     border-radius: 5px; /* Rounded corners */
     font-weight: bold; /* Bold font */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
-  }
-  
-  .cv-button:hover {
+}
+
+.cv-button:hover {
     background-color: rgba(26, 188, 156, 1); /* Teal background on hover */
     color: #000; /* Dark text on hover */
-  }
-  
+}
+
+@media (max-width: 1000px) {
+    .cv-button-container {
+        /* No changes needed here since text-align: center will still apply */
+    }
+    .cv-button {
+        /* If you want the button to take a full-width on smaller screens */
+        display: block; /* Full width block */
+        width: 80%; /* Adjust width as needed */
+        margin: 0 auto; /* Auto margins for horizontal centering */
+    }
+}
