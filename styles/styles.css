@@ -59,13 +59,22 @@ body, html {
 
 	padding: 0;
 
-    cursor: url('hover.png') 4 4, auto;
+    cursor: url('/hover.png') 4 4, auto;
 
     overflow-x: hidden; /* Hides horizontal overflow */
 
 
 }
+/* Custom cursor on hover */
+a:hover, button:hover {
+    cursor: url('/click.png'), auto;
+}
 
+/* Custom cursor on click */
+a:active, button:active {
+    cursor: url('/click.png'), auto;
+
+}
 
 #bg {
     height: 100%;
@@ -262,11 +271,12 @@ body, html {
 
 	width: 3px; 
 
-	height: 40px; 
+	height: 200px; 
 
-	transform: skew(-20deg);
+	transform: skew(-20deg) translateY(100px);
 
 	background-color: #FF0000; 
+    z-index: 10;
 
 }
 
@@ -442,7 +452,7 @@ body, html {
     left: 100%; /* Starts right after the text */
     top: 50%; /* Aligns with the middle of the text */
     width: 200vw; /* Width relative to viewport width */
-    max-width: 900px; /* Maximum width to prevent it from getting too long */
+    max-width: 1500px; /* Maximum width to prevent it from getting too long */
     height: 2px; /* Thickness of the line */
     background-color:  rgba(26, 188, 156, 1); /* Color of the line */
     margin-left: 10px; /* Space between text and line */
@@ -717,7 +727,7 @@ body, html {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Color of the track */
+    background: #000000; /* Color of the track */
 }
 
 ::-webkit-scrollbar-thumb {
@@ -726,7 +736,7 @@ body, html {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: darkblue; /* Color of the scrollbar thumb on hover */
+    background: rgba(26, 188, 156, 1); /* Color of the scrollbar thumb on hover */
 }
 
 /* For Firefox */
@@ -754,3 +764,19 @@ body, html {
     }
 
 }
+
+
+
+.contact-header {
+    font-family: "Expletus Sans"; /* Specified font */
+    font-size: 40px; /* Large font size */
+    font-weight: 700; /* Bold font weight */
+    color: #fff; /* Adjust the color as needed */
+    margin-bottom: 20px; /* Space below the header */
+    text-align: center; /* Center align the text */
+    letter-spacing: 15px; /* Add spacing between each character */
+    position: relative; /* Needed for adjusting position */
+    top: -500px; /* Move up by 50px, adjust as needed */
+    /* Additional styling for the header */
+}
+
