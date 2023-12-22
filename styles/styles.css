@@ -59,7 +59,8 @@ body, html {
 
 	padding: 0;
 
-	cursor: url('img/custom-cursor.png'), auto;
+    cursor: url('hover.png') 4 4, auto;
+
     overflow-x: hidden; /* Hides horizontal overflow */
 
 
@@ -753,4 +754,3 @@ body, html {
     }
 
 }
-
