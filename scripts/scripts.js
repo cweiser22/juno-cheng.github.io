@@ -60,8 +60,5 @@ const observer = new IntersectionObserver((entries) => {
 projectBoxes.forEach(el => observer.observe(el));
 
 
-
-
-
 	
 });
