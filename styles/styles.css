@@ -780,3 +780,46 @@ a:active, button:active {
     /* Additional styling for the header */
 }
 
+.contact-form-container {
+    max-width: 500px;
+    margin: auto; /* Centers horizontally in the containing element */
+    background-color: #000; /* Dark background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    color: #fff; /* White text */
+    position: absolute; /* Position it absolutely within the parent container */
+    left: 50%; /* Position halfway across the parent */
+    top: 70%; /* Position halfway down the parent */
+    transform: translate(-50%, -50%); /* Offset by half the width and height of the element */
+}
+
+
+.contact-form-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-form-container input,
+.contact-form-container select,
+.contact-form-container textarea {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin-bottom: 15px; /* Space between fields */
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(26, 188, 156, 1); /* Teal background */
+    color: #000; /* Dark text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form-container button:hover {
+    background-color: #fff; /* Lighter background on hover */
+    color: rgba(26, 188, 156, 1); /* Teal text on hover */
+}
