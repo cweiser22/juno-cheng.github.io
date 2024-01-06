@@ -87,14 +87,23 @@ a:active, button:active {
     background-size: cover;
 }
 
+/* Default styles for larger screens */
 #content {
     background-color: rgb(0, 0, 0); /* Solid black */
     position: absolute;
     width: 100%;
-    height: 500vh;
+    height: 400vh; /* Default height for larger screens */
     top: 100%;
     z-index: -1;
 }
+
+/* Styles for screens with a max-width of 1000px */
+@media (max-width: 1000px) {
+    #content {
+        height: 430vh; /* Adjusted height for smaller screens */
+    }
+}
+
 
 @keyframes fadeInUp {
 
@@ -779,47 +788,108 @@ a:active, button:active {
     top: -500px; /* Move up by 50px, adjust as needed */
     /* Additional styling for the header */
 }
-
-.contact-form-container {
-    max-width: 500px;
-    margin: auto; /* Centers horizontally in the containing element */
-    background-color: #000; /* Dark background */
-    padding: 20px;
-    border-radius: 10px; /* Rounded corners */
-    color: #fff; /* White text */
-    position: absolute; /* Position it absolutely within the parent container */
-    left: 50%; /* Position halfway across the parent */
-    top: 70%; /* Position halfway down the parent */
-    transform: translate(-50%, -50%); /* Offset by half the width and height of the element */
+@media (max-width: 1000px) {
+    .contact-header {
+        font-family: "Expletus Sans"; /* Specified font */
+        font-size: 40px; /* Large font size */
+        font-weight: 700; /* Bold font weight */
+        color: #fff; /* Adjust the color as needed */
+        margin-bottom: 20px; /* Space below the header */
+        text-align: center; /* Center align the text */
+        letter-spacing: 15px; /* Add spacing between each character */
+        position: relative; /* Needed for adjusting position */
+        top:0px; /* Adjust this value to lower the header on smaller screens */
+    }
 }
 
 
-.contact-form-container h1 {
-    text-align: center;
-    margin-bottom: 30px;
+.map-container {
+    border: 4px solid rgba(26, 188, 156, 1); /* White border */
+    padding: 0; /* Remove any default padding */
+    margin: -400px auto 0 auto; /* Top, Right, Bottom, Left margins */
+    display: block; /* Ensures the container behaves as a block element */
+    width: fit-content; /* Adjusts width to the content, which is the iframe */
 }
 
-.contact-form-container input,
-.contact-form-container select,
-.contact-form-container textarea {
-    width: 100%; /* Full width */
-    padding: 10px;
-    margin-bottom: 15px; /* Space between fields */
-    border: none;
-    border-radius: 5px;
+.map-container iframe {
+    display: block; /* Removes any inherent inline spacing */
+    border: none; /* Removes any default border from the iframe */
+    /* Other iframe styles as needed */
 }
 
-.contact-form-container button {
-    width: 100%;
-    padding: 10px;
-    background-color: rgba(26, 188, 156, 1); /* Teal background */
-    color: #000; /* Dark text */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+@media (max-width: 1000px) {
+    .map-container {
+        border: 4px solid rgba(26, 188, 156, 1); /* White border */
+    padding: 0; /* Remove any default padding */
+    margin: -400px auto 0 auto; /* Top, Right, Bottom, Left margins */
+    display: block; /* Ensures the container behaves as a block element */
+    width: fit-content; /* Adjusts width to the content, which is the iframe */
+        margin-top: 100px; /* Adjust the top margin to lower the map container on smaller screens */
+    }
 }
 
-.contact-form-container button:hover {
-    background-color: #fff; /* Lighter background on hover */
-    color: rgba(26, 188, 156, 1); /* Teal text on hover */
+
+.form-container {
+    max-width: 600px; /* Adjust width as needed */
+    margin: -500px auto; /* Center the container */
+    padding: 20px; /* Padding around the form */
+    text-align: center; /* Center text */
 }
+
+.form-field {
+    margin-bottom: 20px; /* Space between each field */
+}
+
+label {
+    display: block; /* Make label take the full width */
+    margin-bottom: 5px; /* Space between label and input field */
+    text-align: left; /* Align label text to left */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%; /* Make inputs take full width of the container */
+    padding: 10px; /* Padding inside inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+}
+
+.submit-button {
+    border: 2px solid white; /* 2px thick white border */
+    background-color: transparent; /* Transparent background */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.submit-button:hover {
+    background-color: white; /* White background on hover */
+    color: black; /* Black text on hover */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+    .form-container {
+        margin: 00px auto; /* Center the container */
+        width: 90%; /* Adjust width on smaller screens */
+    }
+}
+
+#message {
+    width: 80%;
+    height: 20vh;
+    padding: 10px; /* Adds padding inside the textarea */
+    border: 1px solid #ccc; /* Adds a border */
+    font-family: Arial, sans-serif; /* Sets the font */
+    font-size: 16px; /* Sets the font size */
+    /* Additional styling as needed */
+}
+
+
+
