@@ -100,10 +100,16 @@ a:active, button:active {
 /* Styles for screens with a max-width of 1000px */
 @media (max-width: 1000px) {
     #content {
-        height: 430vh; /* Adjusted height for smaller screens */
+        height: 420vh; /* Adjusted height for smaller screens */
     }
 }
 
+@media (max-height: 800px) {
+    #content {
+        background-color: rgb(255, 0, 0);
+        height: 1000vh; /* Increased height for shorter screens */
+    }
+}
 
 @keyframes fadeInUp {
 
