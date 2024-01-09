@@ -106,7 +106,7 @@ a:active, button:active {
 
 @media (max-height: 800px) {
     #content {
-        background-color: rgb(255, 0, 0);
+        background-color: rgb(0, 0, 0);
         height: 1000vh; /* Increased height for shorter screens */
     }
 }
@@ -208,6 +208,7 @@ a:active, button:active {
 	
 }
 
+
 .container2 {
 	display: flex;
 	position: absolute;
@@ -252,6 +253,18 @@ a:active, button:active {
 	color: #FFFFFF;	
 
 }
+@media (max-height: 500px) {
+    .container {
+        font-size: 100px;
+        top: 100px; /* Adjust top position to move up */
+        /* You may also need to adjust font size, left position, etc., as needed */
+    }
+    .text {
+        top: 220px;
+        font-size: 18px;
+    }
+}
+
 
 @keyframes float {
 
@@ -523,8 +536,44 @@ a:active, button:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(170vh - 50px); /* Adjust the height as necessary */
+    height: calc(160vh - 200px); /* Adjust the height as necessary */
     margin-top: 60px; /* Add top margin to lower the projects container */
+}
+
+@media (max-height: 1200px) {
+    .project-wrapper {
+        margin-top: 300px; /* Increased top margin for smaller screens */
+        /* Adjust other styles as needed */
+    }
+}
+
+@media (max-height: 800px) {
+    .project-wrapper {
+        margin-top: 450px; /* Increased top margin for smaller screens */
+        /* Adjust other styles as needed */
+    }
+}
+
+
+@media (max-height: 600px) {
+    .project-wrapper {
+        margin-top: 500px; /* Increased top margin for smaller screens */
+        /* Adjust other styles as needed */
+    }
+}
+
+@media (max-height: 500px) {
+    .project-wrapper {
+        margin-top: 700px; /* Increased top margin for smaller screens */
+        /* Adjust other styles as needed */
+    }
+}
+
+@media (max-height: 300px) {
+    .project-wrapper {
+        margin-top: 800px; /* Increased top margin for smaller screens */
+        /* Adjust other styles as needed */
+    }
 }
 
 @keyframes fadeIn {
@@ -571,7 +620,7 @@ a:active, button:active {
     font-size: 18px; /* Adjust font size as necessary */
     color: #fff; /* Adjust text color as needed */
     font-family: 'Georgia', serif; /* Example of a 'nicer' font, adjust as desired */
-    max-width: 50%; /* Restrict the width of the paragraph for better readability */
+    max-width: 40%; /* Restrict the width of the paragraph for better readability */
     margin-left: auto; /* These two lines center the paragraph block */
     margin-right: auto;
     padding-left: 0%; /* Adjust this value as needed to center the text towards the left */
@@ -580,6 +629,7 @@ a:active, button:active {
 
 .about-me-description .part1 {
     color: #ffffff;
+    max-width: 30%;
     font-size: 20px;
     font-family: "Expletus Sans", sans-serif;
     font-style: italic; /* Keeps the text italic */
@@ -608,37 +658,10 @@ a:active, button:active {
 .about-me-description .part1, .about-me-description .part2 {
     position: relative;
     left: calc(-10vw); /* Example value, adjust as needed */
-    /* Other styles... */
 }
 
-/* Media query for smaller screens (e.g., mobile devices) */
-@media (max-width: 1000px) { /* Adjust the breakpoint as needed */
-    .about-me-description {
-        text-align: center; /* Center the text */
-        max-width: 70%; /* Increase max-width for better readability on smaller screens */
-        padding-left: 0; /* Reset padding for smaller screens */
-        padding-right: 0; /* Reset padding for smaller screens */
-        
-        /* Other adjustments as needed */
-    }
-}
-
-@media (max-width: 1000px) {
-    .project-container {
-        grid-template-columns: 1fr; 
-        gap: 15px; /* Adjust the gap if needed */
-        
-    }
 
 
-    /* Additional adjustments for .about-me-description */
-    .about-me-description {
-        text-align: center; /* Center the text */
-        max-width: 80%; /* Increase max-width for better readability */
-        padding-left: 100px; /* Reset left padding */
-        padding-right: 0; /* Reset right padding */
-    }
-}
 
 .AboutMe .about-me-image {
     width: 15vw; /* Adjust width based on viewport */
@@ -677,7 +700,7 @@ a:active, button:active {
     .social-icons {
         right: 40%; /* Center both the image and icons horizontally */
         transform: translateX(-70%) translateY(0%); /* Adjust for exact center alignment horizontally */
-        top: 195vh; /* Position lower on the screen */
+        top: 175vh; /* Position lower on the screen */
         width: 25vw;
     }
 }
@@ -687,12 +710,49 @@ a:active, button:active {
     {
         right: 30%; /* Center both the image and icons horizontally */
         transform: translateX(-50%) translateY(0%); /* Adjust for exact center alignment horizontally */
-        top: 195vh; /* Position lower on the screen */
+        top: 175vh; /* Position lower on the screen */
         width: 20vw;
         max-width: 400px;
         
     }
 }
+
+
+/* Styles for screens with a max-width of 1000px and max-height of 900px */
+@media (max-width: 1000px), (max-height: 900px) {
+    .about-me-description {
+        /* Common styles for both width and height constraints */
+        text-align: center; /* Center the text */
+        max-width: 100%; /* Increase max-width for better readability */
+        padding-left: 50px; /* Adjust left padding */
+        padding-right: 100; /* Adjust right padding */
+
+
+    }
+
+    /* Additional specific styles for max-height */
+    @media (max-height: 900px) {
+        .about-me-description {
+            text-align: left; /* Left align the text */
+            padding-left: 100px; /* Reset left padding */
+            margin-top: 800px; /* Move the element upwards */
+            max-width: 60%; /* Adjust max-width for better readability */
+        }
+    }
+
+    @media (max-width: 1000px) {
+
+        .about-me-description {
+            top: -100px; /* Move upwards by 50px */
+            text-align: center; /* Center the text */
+            max-width: 80%; /* Increase max-width for better readability */
+            padding-left: 100px; /* Reset left padding */
+            padding-right: 0; /* Reset right padding */
+    
+        }
+    }
+}
+
 
 
 .cv-button-container {
@@ -808,31 +868,6 @@ a:active, button:active {
     }
 }
 
-
-.map-container {
-    border: 4px solid rgba(26, 188, 156, 1); /* White border */
-    padding: 0; /* Remove any default padding */
-    margin: -400px auto 0 auto; /* Top, Right, Bottom, Left margins */
-    display: block; /* Ensures the container behaves as a block element */
-    width: fit-content; /* Adjusts width to the content, which is the iframe */
-}
-
-.map-container iframe {
-    display: block; /* Removes any inherent inline spacing */
-    border: none; /* Removes any default border from the iframe */
-    /* Other iframe styles as needed */
-}
-
-@media (max-width: 1000px) {
-    .map-container {
-        border: 4px solid rgba(26, 188, 156, 1); /* White border */
-    padding: 0; /* Remove any default padding */
-    margin: -400px auto 0 auto; /* Top, Right, Bottom, Left margins */
-    display: block; /* Ensures the container behaves as a block element */
-    width: fit-content; /* Adjusts width to the content, which is the iframe */
-        margin-top: 100px; /* Adjust the top margin to lower the map container on smaller screens */
-    }
-}
 
 
 .form-container {
