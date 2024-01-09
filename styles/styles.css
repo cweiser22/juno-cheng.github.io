@@ -92,7 +92,7 @@ a:active, button:active {
     background-color: rgb(0, 0, 0); /* Solid black */
     position: absolute;
     width: 100%;
-    height: 400vh; /* Default height for larger screens */
+    height: 450vh; /* Default height for larger screens */
     top: 100%;
     z-index: -1;
 }
@@ -104,10 +104,23 @@ a:active, button:active {
     }
 }
 
+@media (max-width: 800px) {
+    #content {
+        height: 550vh; /* Adjusted height for smaller screens */
+    }
+}
+
 @media (max-height: 800px) {
     #content {
         background-color: rgb(0, 0, 0);
-        height: 1000vh; /* Increased height for shorter screens */
+        height: 700vh; /* Increased height for shorter screens */
+    }
+}
+
+@media (max-height: 600px) {
+    #content {
+        background-color: rgb(0, 0, 0);
+        height: 700vh; /* Increased height for shorter screens */
     }
 }
 
@@ -740,6 +753,20 @@ a:active, button:active {
         }
     }
 
+    @media (max-height: 700px) {
+        .AboutMe {
+            margin-top: 100px; /* Move the element upwards */
+        }
+        .about-me-image  {
+            margin-top: 100px; /* Move the element upwards */
+        }    
+        .social-icons {
+            margin-top: 100px; /* Move the element upwards */
+
+        }
+
+    }
+
     @media (max-width: 1000px) {
 
         .about-me-description {
@@ -934,3 +961,19 @@ textarea {
 
 
 
+
+@media (max-height: 1000px) {
+    .container3 {
+        position: relative; /* or absolute, depending on your layout needs */
+        top: 100px; /* Adjust this value to move the container downwards */
+        /* Add other necessary styles */
+    }
+}
+
+@media (max-width: 1000px) {
+    .container3 {
+        position: relative; /* or absolute, depending on your layout needs */
+        top: 100px; /* Adjust this value to move the container downwards */
+        /* Add other necessary styles */
+    }
+}
