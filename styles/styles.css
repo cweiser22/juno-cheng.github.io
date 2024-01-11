@@ -503,26 +503,29 @@ a:active, button:active {
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(80vw, 1fr)); /* Responsive width */
-    gap: 20px; /* Gap between the boxes */
-    justify-content: center; /* Center the boxes horizontally */
-    padding: 0 20px; /* Remove top padding to reduce the gap, keep horizontal padding */
-    max-width: 1200px; /* Optional: maximum width constraint */
-    margin: 0 auto; /* Center the grid if it's narrower than max-width */
+    grid-template-columns: repeat(auto-fill, minmax(80vw, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .project-box {
-    background-color: #000000; /* Dark background for the box */
-    color: #fff; /* Light text color for readability */
+    background-color: #000000;
+    color: #fff;
     padding: 20px;
-    border: 1px solid rgba(26, 188, 156, 1); /* Red border as shown in the image */
-    display: flex; /* Use flex to control the layout inside the project box */
-    flex-direction: column; /* Stack children elements vertically */
-    justify-content: space-between; /* Distribute space between items */
-    opacity: 0; /* Start with the box invisible */
-    transform: translateY(20px); /* Start slightly translated for the animation */
-    transition: opacity 1s ease-out, transform 1s ease-out; /* Transition for fade-in effect */
+    border: 1px solid rgba(26, 188, 156, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    min-width: 250px; /* Set a reasonable minimum width */
+    overflow: auto; /* Handle overflow - you can choose hidden, scroll, or wrap */
 }
+
 
 .project-box h2 {
     color: #ffffff; /* Red color for the heading to match the border */
@@ -589,6 +592,19 @@ a:active, button:active {
     }
 }
 
+@media (max-width: 700px) {
+    .project-container {
+        grid-template-columns: 1fr; /* Explicitly set to a single column */
+        padding: 0 10px;
+    }
+
+    .project-box {
+        padding: 10px;
+        /* Add any additional styles needed for narrow viewports */
+    }
+}
+
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -633,7 +649,7 @@ a:active, button:active {
     font-size: 18px; /* Adjust font size as necessary */
     color: #fff; /* Adjust text color as needed */
     font-family: 'Georgia', serif; /* Example of a 'nicer' font, adjust as desired */
-    max-width: 40%; /* Restrict the width of the paragraph for better readability */
+    max-width: 50%; /* Restrict the width of the paragraph for better readability */
     margin-left: auto; /* These two lines center the paragraph block */
     margin-right: auto;
     padding-left: 0%; /* Adjust this value as needed to center the text towards the left */
@@ -678,7 +694,7 @@ a:active, button:active {
 
 .AboutMe .about-me-image {
     width: 15vw; /* Adjust width based on viewport */
-    max-width: 200px; /* Set a max width for larger screens */
+    max-width: 300px; /* Set a max width for larger screens */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -748,7 +764,7 @@ a:active, button:active {
         .about-me-description {
             text-align: left; /* Left align the text */
             padding-left: 100px; /* Reset left padding */
-            margin-top: 800px; /* Move the element upwards */
+            margin-top: 140vh; /* Move the element upwards */
             max-width: 60%; /* Adjust max-width for better readability */
         }
     }
@@ -758,10 +774,10 @@ a:active, button:active {
             margin-top: 100px; /* Move the element upwards */
         }
         .about-me-image  {
-            margin-top: 100px; /* Move the element upwards */
+            margin-top: 10vh; /* Move the element upwards */
         }    
         .social-icons {
-            margin-top: 100px; /* Move the element upwards */
+            margin-top: 10vh; /* Move the element upwards */
 
         }
 
