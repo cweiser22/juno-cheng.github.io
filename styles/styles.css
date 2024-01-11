@@ -701,13 +701,13 @@ a:active, button:active {
     object-fit: cover;
     position: absolute;
     right: 20vw; /* Adjust right position */
-    top: calc(120vh + 20px);; /* Adjust top position */
+    top: calc(100vh + 220px);; /* Adjust top position */
 }
 
 .social-icons {
     position: absolute;
     right: calc(20vw + 15vw + 10px); /* Sum of image width and a small gap */
-    top: calc(130vh + 40px); /* Adjust so that icons are vertically aligned with the image top */
+    top: calc(110vh + 240px); /* Adjust so that icons are vertically aligned with the image top */
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
@@ -725,74 +725,92 @@ a:active, button:active {
     color: #fff; /* Color change on hover */
 }
 
+/* Styles for screens with a max-width of 1000px */
 @media (max-width: 1000px) {
     .social-icons {
-        right: 40%; /* Center both the image and icons horizontally */
-        transform: translateX(-70%) translateY(0%); /* Adjust for exact center alignment horizontally */
-        top: 175vh; /* Position lower on the screen */
+        right: 40%;
+        transform: translateX(-70%) translateY(0%);
+        top: 175vh;
         width: 25vw;
     }
-}
 
-@media (max-width: 1000px) {
-    .AboutMe .about-me-image        
-    {
-        right: 30%; /* Center both the image and icons horizontally */
-        transform: translateX(-50%) translateY(0%); /* Adjust for exact center alignment horizontally */
-        top: 175vh; /* Position lower on the screen */
+    .AboutMe .about-me-image {
+        right: 30%;
+        transform: translateX(-50%) translateY(0%);
+        top: 175vh;
         width: 20vw;
         max-width: 400px;
-        
+    }
+
+    .about-me-description {
+        top: -100px;
+        text-align: center;
+        max-width: 80%;
+        padding-left: 100px;
+        padding-right: 0;
     }
 }
 
-
-/* Styles for screens with a max-width of 1000px and max-height of 900px */
-@media (max-width: 1000px), (max-height: 900px) {
+/* Styles for screens with a max-height of 900px */
+@media (max-height: 900px) {
     .about-me-description {
-        /* Common styles for both width and height constraints */
-        text-align: center; /* Center the text */
-        max-width: 100%; /* Increase max-width for better readability */
-        padding-left: 50px; /* Adjust left padding */
-        padding-right: 100; /* Adjust right padding */
-
-
+        text-align: left;
+        padding-left: 100px;
+        margin-top: 140vh;
+        max-width: 60%;
     }
 
-    /* Additional specific styles for max-height */
-    @media (max-height: 900px) {
-        .about-me-description {
-            text-align: left; /* Left align the text */
-            padding-left: 100px; /* Reset left padding */
-            margin-top: 140vh; /* Move the element upwards */
-            max-width: 60%; /* Adjust max-width for better readability */
-        }
+    .AboutMe {
+        margin-top: 100px;
     }
 
-    @media (max-height: 700px) {
-        .AboutMe {
-            margin-top: 100px; /* Move the element upwards */
-        }
-        .about-me-image  {
-            margin-top: 10vh; /* Move the element upwards */
-        }    
-        .social-icons {
-            margin-top: 10vh; /* Move the element upwards */
+    .AboutMe .about-me-image {
+        margin-top: 10vh;
+    }    
 
-        }
+    .social-icons {
+        margin-top: 10vh;
+    }
+}
 
+/* Combined Styles for screens with both max-width of 1000px and max-height of 900px */
+@media (max-width: 1000px) and (max-height: 900px) {
+
+    .AboutMe {
+        margin-top: 200px;
     }
 
-    @media (max-width: 1000px) {
+    .about-me-description {
+        text-align: center;
+        max-width: 100%;
 
-        .about-me-description {
-            top: -100px; /* Move upwards by 50px */
-            text-align: center; /* Center the text */
-            max-width: 80%; /* Increase max-width for better readability */
-            padding-left: 100px; /* Reset left padding */
-            padding-right: 0; /* Reset right padding */
-    
-        }
+    }
+    .AboutMe .about-me-image {
+        margin-top: 20vh;
+    }    
+
+    .social-icons {
+        margin-top: 20vh;
+    }
+}
+
+@media (max-width: 900px) and (max-height: 900px) {
+
+    .AboutMe {
+        margin-top: 300px;
+    }
+
+    .about-me-description {
+        text-align: center;
+        max-width: 100%;
+
+    }
+    .AboutMe .about-me-image {
+        margin-top: 35vh;
+    }    
+
+    .social-icons {
+        margin-top: 35vh;
     }
 }
 
