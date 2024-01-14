@@ -120,7 +120,7 @@ a:active, button:active {
 @media (max-height: 600px) {
     #content {
         background-color: rgb(0, 0, 0);
-        height: 700vh; /* Increased height for shorter screens */
+        height: 900vh; /* Increased height for shorter screens */
     }
 }
 
