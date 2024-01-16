@@ -61,3 +61,16 @@ projectBoxes.forEach(el => observer.observe(el));
 
 
 });
+
+function checkBrowser() {
+    var userAgent = navigator.userAgent;
+
+    // Checking if the browser is Safari
+    if (userAgent.includes('Safari') && !userAgent.includes('Chrome') && !userAgent.includes('Edge')) {
+        alert("Our website is currently not available on Safari. Please use a different browser.");
+        // You can also redirect to another page or perform other actions here
+    }
+}
+
+// Call the function when the page loads
+window.onload = checkBrowser;
