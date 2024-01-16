@@ -94,7 +94,9 @@ a:active, button:active {
     width: 100%;
     height: 450vh; /* Default height for larger screens */
     top: 100%;
+    overflow-x: hidden; /* Hides horizontal overflow */
     z-index: -1;
+
 }
 
 /* Styles for screens with a max-width of 1000px */
