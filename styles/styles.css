@@ -996,6 +996,7 @@ textarea {
     .social-icons {
         /* Center .social-icons similarly */
         margin-right: -90px + 100vw;
+        margin-top: 100px;
   
     }
 }
@@ -1020,7 +1021,8 @@ textarea {
 
     .social-icons {
         /* Center .social-icons similarly */
-        margin-right: -3vw;
+        margin-right: -2.6vw;
+        margin-top: 100px;
   
     }
 }
@@ -1045,7 +1047,40 @@ textarea {
 
     .social-icons {
         /* Center .social-icons similarly */
-        margin-right: -3vw;
+        margin-right: -5vw;
+        margin-top: 100px;
+  
+    }
+}
+
+@media (min-width: 3900px) {
+    /* Styles for very wide screens */
+    .about-me-container {
+        display: flex; /* Enables Flexbox layout */
+        align-items: center; /* Vertically centers items in the container */
+        justify-content: center; /* Horizontally centers items */
+        /* Add more styling as needed */
+    }
+    .about-me-description {
+        /* Center within the parent element */
+        margin-right: 25vw;
+    }
+
+    .about-me-description .part1,
+    .about-me-description .part2 {
+        font-size: 1.2em; /* Increase the font size */
+        max-width: 100%; /* Use the full width of the parent */
+    }
+
+    .about-me-image {
+        /* Assuming .about-me-image is a child of .about-me-description */
+        margin-right: 0vw;
+    }
+
+    .social-icons {
+        /* Center .social-icons similarly */
+        margin-right: -7vw;
+        margin-top: 100px;
   
     }
 }
