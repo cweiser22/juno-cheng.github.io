@@ -1,127 +1,233 @@
 <!doctype html>
+
 <html>
+
 <head>
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="scripts/scripts.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
     <title>Juno</title>
+
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Expletus+Sans" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
+
+
 </head>
+
+
+
 <body>
-<div id="bg"></div>
+
+
+<div id="bg">
+
+</div>
 
 <button id="sidebarToggle">☰</button>
 <div id="sidebar">
     <ul>
-        <li><a href="#home">主页</a></li>
-        <li><a href="#projects">项目</a></li>
-        <li><a href="#AboutMe">关于我</a></li>
-        <li><a href="#contact">联系</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#AboutMe">About</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 </div>
 
-<!-- 主页部分 -->
+
+
+<!-- Home Section -->
+
 <div id="home">
     <div class="container">
         <div class="animated animatedFadeInUp fadeInUp">Juno</div>
     </div>
     <div class="text">
-        <div class="animated animatedFadeInUp fadeInUp">// 开发者和设计师</div>
+        <div class="animated animatedFadeInUp fadeInUp"> // Developer and Designer</div>
+    </div>
+    <div class="animated animatedFadeInUp fadeInUp">
     </div>
     <div class="scroll">
         <div id="ctnr2">
             <div id="arrw"></div>
         </div>
     </div>
-    <div class="txt">向下滚动</div>
+    <div class="txt">SCROLL DOWN</div>
 </div>
 
+
+
+
 <div id="content">
-    <!-- 项目部分 -->
+    <!-- Project Section -->
     <div id="projects">
         <div class="container">
-            <h1 class="animated animatedFadeInUp fadeInUp header-line">项目</h1>
+            <h1 class="animated animatedFadeInUp fadeInUp header-line">Projects</h1>
         </div>
 
         <div class="project-wrapper">
             <div class="project-container">
-                <!-- 项目框 -->
-                <!-- 在此处添加项目详细信息和描述 -->
+                <div class="project-box">
+                    <h2>My Portfolio Website</h2>
+                    <p>A high-performance, Responsive website that uses the power of jQuery for interactive elements and Formspree for handling contact form submissions .</p>
+                    <a href="https://github.com/Juno-Cheng/juno-cheng.github.io" class="project-link">Link to Repo</a>
+                </div>
+                <!-- Repeat for other projects - Make sure to adjus -->
+                <div class="project-box">
+                    <h2>Academic Portfolio</h2>
+                    <p>A comprehensive collection of my key university projects and assignments, demonstrating my academic journey in computer science and software development.</p>
+                    <a href="link-to-second-project" class="project-link">Visit Here</a>
+                </div>
+                <div class="project-box">
+                    <h2>LeetCode Challenges</h2>
+                    <p>My journey through tackling various algorithm and data structure challenges on LeetCode, demonstrating problem-solving skills and proficiency in efficient coding practices.</p>
+                    <a href="your-leetcodes-profile-link" class="project-link">Explore Challenges</a>
+                </div>
+
+                <div class="project-box">
+                    <h2>Kaggle Competitions / Advent of Code</h2>
+                    <p>An exploration of data science and algorithmic challenges through Kaggle competitions and Advent of Code puzzles, highlighting data analysis, machine learning, and creative coding solutions.</p>
+                    <a href="your-kaggle-or-advent-of-code-profile-link" class="project-link">View Projects</a>
+                </div>
+
+                <div class="project-box">
+                    <h2>Anomali</h2>
+                    <p>Optimizing product visibility and audience engagement through innovative marketing strategies and data tool analysis at Anomali.</p>
+                    <a href="https://www.anomali.com" class="project-link">Visit Here</a>
+                </div>
+                <div class="project-box">
+                    <h2>Remotasks</h2>
+                    <p>Description of the sixth project goes here...</p>
+                    <a href="link-to-third-project" class="project-link">Visit Here</a>
+                </div>
+
+                <div class="project-box">
+                    <h2>"Personal Learning Journey</h2>
+                    <p>Currently Being Worked On...</p>
+                    <a href="link-to-third-project" class="project-link">Visit Here</a>
+                </div>
+
+                <div class="project-box">
+                    <h2>Skills and Technologies</h2>
+                    <p>Currently Being Worked On....</p>
+                    <a href="link-to-third-project" class="project-link">Visit Here</a>
+                </div>
+
+                <div class="project-box">
+                    <h2>Upcoming Projects</h2>
+                    <p>Currently Being Worked On...</p>
+                    <a href="link-to-third-project" class="project-link">Visit Here</a>
+                </div>
+
+
             </div>
         </div>
     </div>
 
-    <!-- 关于我部分 -->
+    <!-- About Me Section -->
     <div class="container2">
-        <h1 class="animated animatedFadeInUp fadeInUp header-line2">关于我</h1>
+        <h1 class="animated animatedFadeInUp fadeInUp header-line2">About Me</h1>
     </div>
 
     <div class="AboutMe">
+
+        <!-- Content Section -->
         <div class="about-me-content">
+            <!-- Description -->
             <div class="about-me-description">
                 <p class="part1">
-                    我是一名在UCSC攻读计算机科学学士学位的学生，热衷于在这一领域获得实践经验。我积极寻求成长机会，渴望参与挑战我并提升我的技能的项目和实习。
+                    I am a Computer Science student currently pursuing my Bachelor's Degree at UCSC, with a keen interest in gaining practical experience in the field. Actively seeking opportunities for growth, I am enthusiastic about participating in projects and internships that challenge me and enhance my skills.
                 </p>
                 <p class="part2">
-                    "最终，我的目标是将学术学习与实践应用无缝结合，为自己在技术领域的成功和多变的职业生涯做好准备。"
+                    "Ultimately, my aim is to seamlessly integrate academic learning with practical applications, preparing myself for a successful and dynamic career in the technology sector."
                 </p>
             </div>
 
-            <!-- 个人资料图片 -->
-            <img src="Images/profile.jpg" alt="个人资料图片" class="about-me-image" />
+            <!-- Profile Image -->
+            <img src="Images/profile.jpg" alt="Profile Picture" class="about-me-image" />
 
-            <!-- 社交图标 -->
+            <!-- Social Icons -->
             <div class="social-icons">
-                <!-- 在此处添加社交媒体链接 -->
+                <a href="https://github.com/yourusername" target="_blank" class="icon github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" class="icon linkedin">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:your@email.com" class="icon email">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
 
-            <!-- 简历按钮 -->
+            <!-- CV Button -->
             <div class="cv-button-container">
-                <a href="path_to_your_cv.pdf" target="_blank" class="cv-button">简历 (PDF)</a>
+                <a href="path_to_your_cv.pdf" target="_blank" class="cv-button">Curriculum Vitae (PDF)</a>
             </div>
         </div>
     </div>
 
-    <!-- 联系部分 -->
+
+    <!-- Contact Section -->
     <div class="contact-section">
+        <div class="contact-line-svg">
+            <svg width="100%" height="1700px" viewBox="0 0 100 1700" preserveAspectRatio="none">
+                <path d="M 0,1700 L 50,1600 L 100,1700" stroke="rgba(26, 188, 156, 1)" stroke-width=".5" fill="none"/>
+            </svg>
+        </div>
         <div class="Contact">
             <div class="container3">
-                <h1 class="contact-header">联系</h1>
+                <h1 class="contact-header">Contact</h1>
+                <!-- Include your contact details here -->
                 <div class="form-container">
                     <form action="https://formspree.io/f/mvoeodpj" method="POST">
                         <div class="form-field">
-                            <label for="first-name">名字:</label>
-                            <input type="text" id="first-name" name="first_name" placeholder="名字 *" required>
+                            <label for="first-name">First Name:</label>
+                            <input type="text" id="first-name" name="first_name" placeholder="First Name *" required>
                         </div>
                         <div class="form-field">
-                            <label for="last-name">姓氏:</label>
-                            <input type="text" id="last-name" name="last_name" placeholder="姓氏 *" required>
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" id="last-name" name="last_name" placeholder="Last Name *" required>
                         </div>
                         <div class="form-field">
-                            <label for="phone">电话号码:</label>
-                            <input type="tel" id="phone" name="phone" placeholder="电话号码: *" required>
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number: *" required>
                         </div>
                         <div class="form-field">
-                            <label for="email">电子邮件地址:</label>
-                            <input type="email" id="email" name="email" placeholder="电子邮件地址 *" required>
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" placeholder="Email Address *" required>
                         </div>
                         <div class="form-field">
-                            <label for="message">你的信息:</label>
-                            <textarea id="message" name="message" placeholder="在这里输入你的信息..." required></textarea>
+                            <label for="message">Your message:</label>
+                            <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
                         </div>
-                        <button type="submit" class="submit-button">发送</button>
+                        <button type="submit" class="submit-button">Send</button>
                     </form>
                 </div>
+
+
             </div>
         </div>
     </div>
 
 </div>
+
+
+
+
+
 </body>
+
 </html>
