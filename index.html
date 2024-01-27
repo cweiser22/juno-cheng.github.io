@@ -45,22 +45,83 @@
 <div id="content">
     <!-- 项目部分 -->
     <div id="projects">
-        <!-- 在此处翻译项目描述 -->
-        <!-- 为其他项目重复此步骤 -->
+        <div class="container">
+            <h1 class="animated animatedFadeInUp fadeInUp header-line">项目</h1>
+        </div>
+
+        <div class="project-wrapper">
+            <div class="project-container">
+                <!-- 项目框 -->
+                <!-- 在此处添加项目详细信息和描述 -->
+            </div>
+        </div>
     </div>
 
     <!-- 关于我部分 -->
     <div class="container2">
         <h1 class="animated animatedFadeInUp fadeInUp header-line2">关于我</h1>
     </div>
+
     <div class="AboutMe">
-        <!-- 在此处翻译“关于我”部分的内容 -->
+        <div class="about-me-content">
+            <div class="about-me-description">
+                <p class="part1">
+                    我是一名在UCSC攻读计算机科学学士学位的学生，热衷于在这一领域获得实践经验。我积极寻求成长机会，渴望参与挑战我并提升我的技能的项目和实习。
+                </p>
+                <p class="part2">
+                    "最终，我的目标是将学术学习与实践应用无缝结合，为自己在技术领域的成功和多变的职业生涯做好准备。"
+                </p>
+            </div>
+
+            <!-- 个人资料图片 -->
+            <img src="Images/profile.jpg" alt="个人资料图片" class="about-me-image" />
+
+            <!-- 社交图标 -->
+            <div class="social-icons">
+                <!-- 在此处添加社交媒体链接 -->
+            </div>
+
+            <!-- 简历按钮 -->
+            <div class="cv-button-container">
+                <a href="path_to_your_cv.pdf" target="_blank" class="cv-button">简历 (PDF)</a>
+            </div>
+        </div>
     </div>
 
     <!-- 联系部分 -->
     <div class="contact-section">
-        <!-- 在此处翻译联系部分的内容 -->
+        <div class="Contact">
+            <div class="container3">
+                <h1 class="contact-header">联系</h1>
+                <div class="form-container">
+                    <form action="https://formspree.io/f/mvoeodpj" method="POST">
+                        <div class="form-field">
+                            <label for="first-name">名字:</label>
+                            <input type="text" id="first-name" name="first_name" placeholder="名字 *" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="last-name">姓氏:</label>
+                            <input type="text" id="last-name" name="last_name" placeholder="姓氏 *" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="phone">电话号码:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="电话号码: *" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="email">电子邮件地址:</label>
+                            <input type="email" id="email" name="email" placeholder="电子邮件地址 *" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="message">你的信息:</label>
+                            <textarea id="message" name="message" placeholder="在这里输入你的信息..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">发送</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
+
 </div>
 </body>
 </html>
