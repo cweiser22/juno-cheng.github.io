@@ -768,10 +768,13 @@ a:active, button:active {
     scrollbar-color: rgba(26, 188, 156, 1) #000000; /* thumb and track color */
 }
 
+/*==================================================================================*/
+
+
 .contact-line-svg {
     text-align: center; /* Center the SVG */
     position: relative; /* Add positioning context */
-    top: 400px; /* Move the SVG higher by 100px */
+    top: 1vh; /* Move the SVG higher by 100px */
     transform: translateY(-50%); /* Additional upward adjustment */
 }
 
