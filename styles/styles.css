@@ -802,7 +802,7 @@ a:active, button:active {
     text-align: center; /* Center align the text */
     letter-spacing: 15px; /* Add spacing between each character */
     position: relative; /* Needed for adjusting position */
-    top: -500px; /* Move up by 50px, adjust as needed */
+    top: -90vh; /* Move up by 50px, adjust as needed */
     /* Additional styling for the header */
 }
 @media (max-width: 1000px) {
@@ -823,7 +823,7 @@ a:active, button:active {
 
 .form-container {
     max-width: 600px; /* Adjust width as needed */
-    margin: -500px auto; /* Center the container */
+    margin: -90vh auto; /* Center the container */
     padding: 20px; /* Padding around the form */
     text-align: center; /* Center text */
 }
