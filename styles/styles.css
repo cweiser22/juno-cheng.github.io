@@ -2,62 +2,64 @@
 
 * {
 
-	text-decoration: none;
-	margin: 0;
+    text-decoration: none;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Source Sans Pro", sans-serif;
+
 }
 
 nav {
 
-	position: fixed;
+    position: fixed;
 
-	width: 100%;
+    width: 100%;
 
-	z-index: 2;
+    z-index: 2;
 
-	color: white;
+    color: white;
 
 }
 
 li {
 
-	display: inline;
+    display: inline;
 
-	font-family: "Source Sans Pro", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
 
-	font-size: 16px;
+    font-size: 16px;
 
-	font-weight: 400px;
+    font-weight: 400px;
 
-	padding: 40px;
+    padding: 40px;
 
-	
 
-	
+
+
 
 }
 
 #logo {
 
-	font-weight: 700;
+    font-weight: 700;
 
-	font-size: 23px;
+    font-size: 23px;
 
-	font-family: "Expletus Sans";
+    font-family: "Expletus Sans";
 
-	position: relative;
+    position: relative;
 
-	top: 3px;
+    top: 3px;
 
 }
 
 body, html {
 
-	margin: 0;
+    margin: 0;
 
-	padding: 0;
+    font-family: "Source Sans Pro", sans-serif;
+
+    padding: 0;
 
     cursor: url('/hover.png') 4 4, auto;
 
@@ -101,7 +103,7 @@ a:active, button:active {
 
 @keyframes fadeInUp {
 
-	
+
 
     from {
 
@@ -170,75 +172,75 @@ a:active, button:active {
 }
 
 .container {
-	display: flex;
-	position: absolute;
+    display: flex;
+    position: absolute;
 
-	font-family: "Expletus Sans";
+    font-family: "Expletus Sans";
 
-	top: 375px;
+    top: 375px;
 
-	left: 21%;
+    left: 21%;
 
-	font-size: 120px;
+    font-size: 120px;
 
-	font-weight: bolder;
+    font-weight: bolder;
 
-	font-weight: 700;
+    font-weight: 700;
 
-	transform: translatey(0px);
+    transform: translatey(0px);
 
-	animation: float 3.5s ease-in-out infinite;
+    animation: float 3.5s ease-in-out infinite;
 
-	letter-spacing: 12px;
+    letter-spacing: 12px;
 
-	color: white;
+    color: white;
 
-	
+
 }
 
 
 .container2 {
-	display: flex;
-	position: absolute;
+    display: flex;
+    position: absolute;
 
-	font-family: "Expletus Sans";
+    font-family: "Expletus Sans";
 
-	top: 375px;
+    top: 375px;
 
-	left: 21%;
+    left: 21%;
 
-	font-size: 120px;
+    font-size: 120px;
 
-	font-weight: bolder;
+    font-weight: bolder;
 
-	font-weight: 700;
+    font-weight: 700;
 
-	transform: translatey(0px);
+    transform: translatey(0px);
 
-	animation: float 3.5s ease-in-out infinite;
+    animation: float 3.5s ease-in-out infinite;
 
-	letter-spacing: 12px;
+    letter-spacing: 12px;
 
-	color: white;
+    color: white;
 
-	
+
 }
 
 .text {
 
-	position: absolute;
+    position: absolute;
 
-	font-family: "Titillium Web";
+    font-family: "Titillium Web";
 
-	font-size: 36px;
+    font-size: 36px;
 
-	top: 512px;
+    top: 512px;
 
-	left: 25%;
+    left: 25%;
 
-	font-weight: 400;
+    font-weight: 400;
 
-	color: #FFFFFF;	
+    color: #FFFFFF;
 
 }
 @media (max-height: 500px) {
@@ -257,106 +259,106 @@ a:active, button:active {
 
 @keyframes float {
 
-	0% {
+    0% {
 
-		transform: translatey(0px) rotate(0.01deg);
+        transform: translatey(0px) rotate(0.01deg);
 
 
-	}
+    }
 
-	50% {
+    50% {
 
-		transform: translatey(-15px) rotate(0.01deg);
+        transform: translatey(-15px) rotate(0.01deg);
 
-	}
+    }
 
-	100% {
+    100% {
 
-		transform: translatey(0px) rotate(0.01deg);
+        transform: translatey(0px) rotate(0.01deg);
 
-	}
+    }
 
 }
 
- .prlgrm {
+.prlgrm {
 
-	position: relative;
+    position: relative;
 
-	top: 518px;
+    top: 518px;
 
-	left: 23%;
+    left: 23%;
 
-	width: 3px; 
+    width: 3px;
 
-	height: 200px; 
+    height: 200px;
 
-	transform: skew(-20deg) translateY(100px);
+    transform: skew(-20deg) translateY(100px);
 
-	background-color: #FF0000; 
+    background-color: #FF0000;
     z-index: 10;
 
 }
 
 .scroll {
-	background-color: rgba(0,0,0, .23);
-	position: fixed;
-	width: 45px;
-	height: 45px;
-	top: 89%;
-	left: 90%;
-	border-radius: 50%;
-	transition: 0.3s;
-	
+    background-color: rgba(0,0,0, .23);
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    top: 89%;
+    left: 90%;
+    border-radius: 50%;
+    transition: 0.3s;
+
 }
 
 .scroll:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .txt {
-	position: fixed;
-	font-weight: 400;
-	font-family: "Titillium Web";
-	font-size: 18px;
-	letter-spacing: 5px;
-	color: whitesmoke;
-	top: 90%;
-	left: 80%;
-	z-index: 5;
-	transition: 0.3s;
-	
+    position: fixed;
+    font-weight: 400;
+    font-family: "Titillium Web";
+    font-size: 18px;
+    letter-spacing: 5px;
+    color: whitesmoke;
+    top: 90%;
+    left: 80%;
+    z-index: 5;
+    transition: 0.3s;
+
 }
 
 #arrw {
-	opacity: 1;
-	border: solid whitesmoke;
-	width: 4px;
-	height: 4px;
-  	border-width: 0 3px 3px 0;
-  	display: inline-block;
-  	padding: 3px;
-	transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-	
-	
+    opacity: 1;
+    border: solid whitesmoke;
+    width: 4px;
+    height: 4px;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+
+
 }
 
 #ctnr2 {
-	position: absolute;
-	top: 28%;
-	left: 35%;
-	transform: scale(1.2);
+    position: absolute;
+    top: 28%;
+    left: 35%;
+    transform: scale(1.2);
 }
 
 .scrolled {
-	color: black;
-	left: 81%;
+    color: black;
+    left: 81%;
 }
 
 .scrolled2 {
-	background-color: rgba(0, 0, 0, 1);
-	border-color: blue;
-	transform: rotate(180deg);
+    background-color: rgba(0, 0, 0, 1);
+    border-color: blue;
+    transform: rotate(180deg);
 }
 
 #sidebar {
@@ -386,7 +388,7 @@ a:active, button:active {
 
 #sidebar ul {
     list-style: none; /* Remove default list styling */
-	padding-top: 60px;
+    padding-top: 60px;
     margin: 0;
 }
 
@@ -410,7 +412,7 @@ a:active, button:active {
 
 #content .container {
     position: absolute; /* Position the container absolutely within the content */
-	top: 50px; /* Increase top value to lower the text */
+    top: 50px; /* Increase top value to lower the text */
     left: 50px; /* Maintain left alignment */
     margin: 0; /* Reset any margin */
     padding: 20px; /* Add padding to move content away from the very edge */
